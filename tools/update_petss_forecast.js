@@ -8,7 +8,7 @@
  *  - data/petss_meta.json      ({ stid, datum, run_dir, cycle, source_url, updated_utc, n_points })
  *
  * Env:
- *  - PETSS_STID  (required) e.g. "8531804"
+ *  - PETSS_STID  (required) e.g. "8535055"
  *  - PETSS_DATUM (optional; metadata only) e.g. "MLLW"
  */
 
