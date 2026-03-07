@@ -1056,15 +1056,15 @@ a.brand *{
     <div class="stages" aria-label="Flood stages">
       <div class="stage">
         <div class="stageName">Minor</div>
-        <div class="badge" id="minorBadge" style="color:var(--minor)">5.20–6.20 ft</div>
+        <div class="badge" id="minorBadge" style="color:var(--minor)">7.60–8.60 ft</div>
       </div>
       <div class="stage">
         <div class="stageName">Moderate</div>
-        <div class="badge" id="moderateBadge" style="color:var(--moderate)">6.20–7.20 ft</div>
+        <div class="badge" id="moderateBadge" style="color:var(--moderate)">8.60–9.60 ft</div>
       </div>
       <div class="stage">
         <div class="stageName">Major</div>
-        <div class="badge" id="majorBadge" style="color:var(--major)">≥ 7.20 ft</div>
+        <div class="badge" id="majorBadge" style="color:var(--major)">≥ 9.60 ft</div>
       </div>
     </div>
   </div>
@@ -1303,9 +1303,9 @@ const DATUMS = ["MLLW", "NAVD88", "MSL", "MHHW"]; // cycle order
 // From  table (Gauge Zero row): datum = MLLW + offset
 const OFFSET_FROM_MLLW = {
   MLLW:   0.00,
-  NAVD88: -2.10,
-  MSL:    -1.87,
-  MHHW:   -3.88
+  NAVD88: -3.50,
+  MSL:    -3.15,
+  MHHW:   -6.32
 };
 
 function mllwToDatum(ft, datum){
@@ -1360,10 +1360,10 @@ const REQUIRE_WITHIN_HOURS = 1;           // must have at least one obs point wi
 
 /* Flood thresholds (from  table) */
 const THRESH = {
-  MLLW:  { minorLow:5.20, moderateLow:6.20, majorLow:7.20 },
-  NAVD88:{ minorLow:3.10, moderateLow:4.10, majorLow:5.10 },
-  MSL:   { minorLow:3.33, moderateLow:4.33, majorLow:5.33 },
-  MHHW:  { minorLow:1.32, moderateLow:2.32, majorLow:3.32 }
+  MLLW:  { minorLow:7.60, moderateLow:8.60, majorLow:9.60 },
+  NAVD88:{ minorLow:4.10, moderateLow:5.10, majorLow:6.10 },
+  MSL:   { minorLow:4.45, moderateLow:5.45, majorLow:6.45 },
+  MHHW:  { minorLow:1.28, moderateLow:2.28, majorLow:3.28 }
 };
 
       const HOUR_MS = 60 * 60 * 1000;
